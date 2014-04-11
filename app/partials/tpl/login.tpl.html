@@ -1,0 +1,19 @@
+<!-- login form -->
+<div class="col-xs-4">
+	<form role="form" name="login">
+		<div class="form-group">
+			<fieldset>
+				<h2>Welcome: {{user.id}}</h2>
+				<div class="form-group">
+					<input type="text" class="form-control input-sm" placeholder="Enter ID" ng-model="user.id" required>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control input-sm" placeholder="password" required ng-model="user.pass" required>
+				</div>
+				<button type="submit" class="btn btn-default" value="login" ng-disabled="login.$invalid" ng-click="login(user)">Submit</button>
+				<p>{{msgtxt}}</p>
+			</fieldset>
+		</div>
+	</form>
+</div>
+<!-- end login form-->

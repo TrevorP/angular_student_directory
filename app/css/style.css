@@ -1,0 +1,23 @@
+/* cssd.css */
+
+.col-xs-4 {
+		margin:0 auto;
+		float:none;
+		width: 497px;
+}
+#login {
+		margin:0 auto;
+		float:none;
+}
+header {
+	margin-bottom:30px;
+}
+.form-control {
+	margin: 8px 8px 10px 0px;
+}
+.form-inline {
+	margin-top: 50px;
+}
+label {
+	margin-right: 5px;
+}

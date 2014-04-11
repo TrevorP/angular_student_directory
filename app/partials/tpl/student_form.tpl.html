@@ -1,0 +1,32 @@
+<!-- student add form -->
+<div class="col-xs-4" data-ng-controller="studentCtrl">
+	<h2>Student Information</h2>
+	<form role="form">
+		<div class="form-group">
+			<label for="firstname">First Name</label>
+			<input type="text" class="form-control" id="firstname" placeholder="Enter First Name" data-ng-model="student.firstname" required>
+		</div>
+		<div class="form-group">
+			<label for="middlename">Middle Name</label>
+			<input type="text" class="form-control" id="middlename" placeholder="Enter Middle Name" data-ng-model="student.middlename" required>
+		</div>
+		<div class="form-group">
+			<label for="lastname">Last Name</label>
+			<input type="text" class="form-control" id="lastname" placeholder="Enter Last Name" data-ng-model="student.lastname" required> 
+		</div>
+		<div class="form-group">
+			<label for="degreeprogram">Degree Program</label>
+			<input type="text" class="form-control" id="degreeprogram" placeholder="Enter Degree Program" data-ng-model="student.degreeprogram">
+		</div>
+		<div class="form-group">
+			<label for="datedeclared">Date Declared in Degree Program</label>
+			<input type="date" class="form-control" id="datedeclared" placeholder="" data-ng-model="student.datedeclared">
+		</div>
+		<div class="form-group">
+			<label for="graddate">Exected Graduation Date</label>
+			<input type="date" class="form-control" id="graddate" placeholder="" data-ng-model="student.graddate">
+		</div>
+		<button type="submit" class="btn btn-default" ng-click="update(student)">Submit</button>
+	</form>
+</div>
+<!-- end student add form-->
